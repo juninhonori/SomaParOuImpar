@@ -16,7 +16,8 @@ public class SomaParOuImpar {
         int contapar = 0;
 
 
-        for (int i=0;i<numeros.length;i++){
+        for (int i=0;i<numeros.length;i++)
+        {
 
             //Guarda valor no ArrayList
             range.add(numeros[i]);
@@ -33,13 +34,17 @@ public class SomaParOuImpar {
             if(operacaomat == 1){
                 somaimpar = somaimpar + range.get(i);
                 System.out.println("O número " + range.get(i) + " é ímpar e está na posição: " + i);
+                System.out.println("");
                 contaimpar++;
             } else {
                 somapar = somapar + range.get(i);
                 System.out.println("O número " + range.get(i) + " é par e está na posição: " + i);
+                System.out.println("");
                 contapar++;
             }
+            
         }
+        
         System.out.println("");
         System.out.println("-------------------------------------");
         System.out.println("Encontramos um total de: " + contaimpar + " números ímpares e a soma de ímpares deu: " + somaimpar);
